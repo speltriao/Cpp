@@ -164,7 +164,7 @@ void output(){
     std::cout<< BOLD "\nTOTAL OF MUSIC FOUND:" RESET<< total<<"\n\n\n";
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     do {
-       std::cout<<"Press any key to continue... ";
+       std::cout<<"Press enter to continue... ";
     }while (std::cin.get() != '\n');
 }
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <list>
+#include <vector>
 
 
 class User{
@@ -30,10 +30,10 @@ class SuperUser:public User{
         }
 };
 
-std::list<User> create_users(){
+std::vector<User> create_users(){
     std::string id;
     std::string name;
-    std::list<User> lista;
+    std::vector<User> lista;
 
     while (1){
         std::cout<<"Type the user name or type \"exit\" to leave:\n";
@@ -49,7 +49,7 @@ std::list<User> create_users(){
     return lista;
 }
 
-void print_users(std::list<User> l){
+void print_users(std::vector<User> l){
     for(User us : l){
         std::cout<<"The user name is: "<<us.getName()<<". This user id is: "<<us.getID()<<"\n"; 
     }
